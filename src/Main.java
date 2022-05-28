@@ -39,10 +39,11 @@ public class Main {
         }
         System.out.println();
         for (int i = 0; i < integerArrays.length; i++){
-            int sum;
             if(integerArrays[i] % 2 != 0){
-                 sum = integerArrays[i] + 1;
-                System.out.print(sum + ",");
+                 integerArrays[i]++;
+            }
+            if (integerArrays[i] % 2== 0) {
+                System.out.print(integerArrays[i] + ",");
             }
         }
     }
